@@ -1,0 +1,65 @@
+.container {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+
+.div_1{
+  display: flex;
+}
+
+.h2{
+  font-size: 50px;
+  margin-left: 20px;
+  color: #002581;
+}
+
+.paragrafo{
+  text-align: justify;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.paragrafo2{
+  text-align: justify;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: 17px;
+}
+
+.texto1 {
+  width: 50%;
+}
+
+.imagen1{
+  width: 50%;
+}
+
+.img{
+  border-radius: px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 500px;
+  height: 200px;
+  margin-top: 50px;
+}
+.img2{
+  border-radius: px;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 500px;
+  height: 200px;
+}
+
+.img3{
+  border-radius: px;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 500px;
+  height: 200px;
+}
