@@ -1,12 +1,33 @@
-<header style="height: 10%;">
-     <div style="max-width: 930px;">
-                    <section style="width: 10rem; min-width: 10rem; max-width: 10rem; height: 1.25rem; min-height: 1.25rem; max-height: 1.25rem;">
-                        <img src="logo.png" width="100px">
-                    </section>
-                    <section style="position: relative; margin-top: 65px;">
-                        <a href="file:///C:/Users/gio-v/OneDrive/%C3%81rea%20de%20Trabalho/DesenvolvimentoWEB/HTML/Horarios.html"><button style=" float: right; background: #002581; color: white; padding: 10px 20px; border: none; border-radius: 50px; margin: 0 15px; width: 120px; margin-left: 25px;">Horarios</button></a>
-                        <a href="file:///C:/Users/gio-v/OneDrive/%C3%81rea%20de%20Trabalho/DesenvolvimentoWEB/HTML/Contato.html"><button style=" float: right; background: #002581; color: white; padding: 10px 20px; border: none; border-radius: 50px; margin: 0 15px; width: 120px; margin-left: 25px;">Contato</button></a>
-                        <a href="file:///C:/Users/gio-v/OneDrive/%C3%81rea%20de%20Trabalho/DesenvolvimentoWEB/HTML/SaibaMais.html"><button style=" float: right; background: #002581; color: white; padding: 10px 20px; border: none; border-radius: 50px; margin: 0 15px; width: 120px; margin-left: 25px;">Saiba Mais</button></a>
-                    </section>
-     </div>
- </header>
+</header>
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="contato.css">
+</head>
+<body>  
+  <div class="contact-wrapper">
+    <div class="contact-info" >
+      <h2 class="h2_inf">Informações de Contato</h2>
+      <p class="txt_inf"><b>Telefone:</b> (51) 44526-7890</p>
+      <p class="txt_inf"><b>E-mail:</b> contato@lartic.com</p>
+      <p class="txt_inf"><b>Ouvidoria:</b> (51) 4526-7890</p>
+    </div>
+    
+    <div class="form-container">
+      <h2 class="h2_form">Formulário de Contato</h2>
+      <form>
+        <label for="name"><b>Nome:</b></label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email"><b>E-mail:</b></label>
+        <input type="text" id="email" name="email" required>
+        
+        <label for="message"><b>Mensagem:</b></label>
+        <textarea id="message" name="message" required></textarea>
+        
+        <input type="submit" value="Enviar">
+      </form>
+    </div>
+  </div>
+</body>
+</html>
