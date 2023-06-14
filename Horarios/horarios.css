@@ -1,73 +1,102 @@
+/* Estilos para a tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Estilo para a classe 'container' */
 .container {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  max-width: 1000px;
+  width: 80%;
   margin: 0 auto;
 }
 
-
-.div_1{
+/* Estilos para as classes de saída e chegada */
+.saida, .chegada {
   display: flex;
+  align-items: center;
 }
 
-.h2{
-  font-size: 50px;
-  margin-left: 20px;
-  color: #002581;
+.saida label, .chegada label {
+  font-weight: bold;
 }
 
-.paragrafo{
-  text-align: justify;
-  padding-left: 15px;
-  padding-right: 15px;
+.chegada div {
+  margin-bottom: 8px;
 }
 
-.paragrafo1{
-  text-align: justify;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-top: 70px
+.tempoViagem {
+  display: flex;
+  align-items: center;
+  color: #888;
 }
 
-.paragrafo2{
-  text-align: justify;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-right: 17px;
-  margin-top: 70px
+.tempoViagem i {
+  margin-right: 4px;
 }
 
-.texto1 {
-  width: 65%;
+/* Estilos para a classe de dias */
+.dias {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
 }
 
-.imagen1{
-  width: 35%;
+.dia, .diaPossui {
+  padding: 4px;
+  margin-right: 4px;
+  border-radius: 4px;
+  background-color: #eee;
 }
 
-.img{
-  border-radius: px;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 335px;
-  height: 200px;
-  margin-top: 50px;
-}
-.img2{
-  border-radius: px;
-  padding-top: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 335px;
-  height: 200px;
+.diaPossui {
+  background-color: #5cb85c;
+  color: #fff;
 }
 
-.img3{
-  border-radius: px;
-  padding-top: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 335px;
-  height: 200px;
+/* Estilo para a classe de modalidade */
+.modalidade {
+  margin-bottom: 8px;
+}
+
+/* Estilos para a classe de descrição */
+.descricao {
+  margin-bottom: 8px;
+}
+
+/* Estilos para a classe de seguro */
+.seguro {
+  margin-bottom: 8px;
+}
+
+.float-right {
+  float: right;
+}
+
+/* Estilos para os tooltips */
+[data-toggle="tooltip"] {
+  position: relative;
+  cursor: pointer;
+}
+
+[data-toggle="tooltip"]:before {
+  content: attr(title);
+  position: absolute;
+  top: -20px;
+  left: 0;
+  display: none;
+  padding: 4px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+[data-toggle="tooltip"]:hover:before {
+  display: block;
 }
