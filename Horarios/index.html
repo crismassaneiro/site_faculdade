@@ -1,276 +1,78 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Horários</title>
-    <link rel="stylesheet" href="horarios.css">
-    <link rel="stylesheet" href="../Footer/footer.css">
-  </head>
+
+    <head>
+        <link rel="stylesheet" href="pagina_cidades.css">
+        <link rel="stylesheet" href="/Header/header.css">
+        <link rel="stylesheet" href="/Footer/footer.css">
+        <script src="index.js"></script>
+    </head>
+
+    <header>
+      <div class="container_header">  
+          <div class="menu">
   
-    <body style="margin-top: auto; margin-right: auto; margin-bottom: auto; margin-left: auto;">
-      
-      <header>
-          <div style="max-width: 930px;">
-              <section style="width: 10rem; min-width: 10rem; max-width: 10rem; height: 1.25rem; min-height: 1.25rem; max-height: 1.25rem;">
-                  <img src="iconLartic.png">
-              </section>
-              <section style="position: relative; margin-top: 65px;">
-                <a href="../Horarios/index.html"><button style=" float: right; background: #002581; color: white; padding: 10px 20px; border: none; border-radius: 50px; margin: 0 15px; width: 120px; margin-left: 25px; cursor: pointer;">Horarios</button></a>
-                <a href="../Contato/index.html"><button style=" float: right; background: #002581; color: white; padding: 10px 20px; border: none; border-radius: 50px; margin: 0 15px; width: 120px; margin-left: 25px; cursor: pointer;">Contato</button></a>
-                <a href="../Saiba_Mais/index.html"><button style=" float: right; background: #002581; color: white; padding: 10px 20px; border: none; border-radius: 50px; margin: 0 15px; width: 120px; margin-left: 25px; cursor: pointer;">Saiba Mais</button></a>
-                <a href="../Pagina_Inicial/index.html"><button style=" float: right; background: #002581; color: white; padding: 10px 20px; border: none; border-radius: 50px; margin: 0 15px; width: 120px; margin-left: 25px; cursor: pointer;">Inicio</button></a>
-            </section>
+              <div class="div_logo_menu">
+                  <a href="/Pagina_Inicial/index.html"><img class="logo_menu" src="/Header/img/Logo Lartic  722x250px.png" alt=""></a>     
+              </div>
+              
+              <div class="nomes_menu">
+                      <a href="/Horarios/index.html"><button style=" float: right; background: #002581; color: white; padding: 10px 20px; border: none; border-radius: 50px; margin: 0 15px; width: 120px; margin-left: 25px; cursor: pointer;">Horários</button></a>
+                      <a href="/Contato/index.html"><button style=" float: right; background: #002581; color: white; padding: 10px 20px; border: none; border-radius: 50px; margin: 0 15px; width: 120px; margin-left: 25px; cursor: pointer;">Contato</button></a>
+                      <a href="/Saiba_Mais/index.html"><button style=" float: right; background: #002581; color: white; padding: 10px 20px; border: none; border-radius: 50px; margin: 0 15px; width: 120px; margin-left: 25px; cursor: pointer;">Saiba Mais</button></a>
+                      <a href="/Pagina_Inicial/index.html"><button style=" float: right; background: #002581; color: white; padding: 10px 20px; border: none; border-radius: 50px; margin: 0 15px; width: 120px; margin-left: 25px; cursor: pointer;">Inicio</button></a>
+              </div>
           </div>
-      </header>
-        <section class="def-section">
-          <div class="top-banner">
-            <div class="def-title text-center">
-              <h3>Novo Hamburgo</h3>
+      </div>
+  </header>
+  </html>
+
+    <body>
+        <div class="container_pagina_inicial">
+                
+                <div class="div_buttons">
+                  <a href="/Horarios_Cidade/porto_alegre/index.html"><button class="button">Porto Alegre</button></a>
+                  <a href="/Horarios_Cidade/novo_hamburgo/index.html"><button class="button">Novo Hamburgo</button></a>  
+                  <a href="/Horarios_Cidade/viamao/index.html"><button class="button">Viamão</button></a> 
+                </div>
+
+                <div class="div_buttons">
+                  <a href="/Horarios_Cidade/alvorada/index.html"><button class="button">Alvorada</button></a> 
+                  <a href="/Horarios_Cidade/campo_bom/index.html"><button class="button">Campo Bom</button></a> 
+                  <a href="/Horarios_Cidade/guaiba/index.html"><button class="button">Guaíba</button></a> 
+               </div>
+
+              <div class="div_buttons">
+                <a href="/Horarios_Cidade/esteio/index.html"><button class="button">Esteio</button></a> 
+                <a href="/Horarios_Cidade/canoas/index.html"><button class="button">Canoas</button></a> 
+                <a href="/Horarios_Cidade/dois_irmaos/index.html"><button class="button">Dois Irmãos</button></a> 
             </div>
+
+            <div class="div_buttons">
+              <a href="/Horarios_Cidade/canela/"><button class="button">Canela</button></a> 
+              <a href="/Horarios_Cidade/gramado/index.html"><button class="button">Gramado</button></a> 
+              <a href="/Horarios_Cidade/caxias_do_sul/index.html"><button class="button">Caxias do Sul</button></a> 
           </div>
-        </section>
+         </div>
+        
 
-  
-    <div class="container">
-      <table id="datatable_tabletools" class="table table-striped table-hover">
-        <tbody>
-          <tr>
-            <td>
-              <div class="saida">
-                <label data-toggle="tooltip" id="horaSaida" title="Hora da Partida">06:30</label>
-              </div>
-            </td>
-            <td>
-              <label data-toggle="tooltip" class="tempoViagem" title="Tempo de viagem">00:30</label>
-            </td>
-            <td>
-              <div class="dias">
-                <label class="dia">Dom</label>
-                <label class="diaPossui">Seg</label>
-                <label class="diaPossui">Ter</label>
-                <label class="diaPossui">Qua</label>
-                <label class="diaPossui">Qui</label>
-                <label class="diaPossui">Sex</label>
-                <label class="diaPossui">Sab</label>
-              </div>
 
-            </td>
-            <td>
-              <div class=" modalidade">
-                  <label data-toggle="tooltip" title="Tipo de ônibus">Comum</label>
-              </div>
-            </td>
-            <td>
-              <div class="descricao">
-                <label data-toggle="tooltip" title="Trecho da linha">Bairro - Centro (Via Av. Mauá)</label>
-              </div>
-            </td>
-            <td>
-              <div class="seguro clearfix">
-                <label class="float-right"><strong><label>R$ </label> 7,75</strong></label>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class="saida">
-                <label data-toggle="tooltip" id="horaSaida" title="Hora da Partida">06:45</label>
-              </div>
-            </td>
-            <td>
-              <label data-toggle="tooltip" class="tempoViagem" title="Tempo de viagem">00:30</label>
-            </td>
-            <td>
-              <div class="dias">
-                <label class="dia">Dom</label>
-                <label class="diaPossui">Seg</label>
-                <label class="diaPossui">Ter</label>
-                <label class="diaPossui">Qua</label>
-                <label class="diaPossui">Qui</label>
-                <label class="diaPossui">Sex</label>
-                <label class="diaPossui">Sab</label>
-              </div>
+    </body>        
 
-            </td>
-            <td>
-              <div class=" modalidade">
-                  <label data-toggle="tooltip" title="Tipo de ônibus">Comum</label>
-              </div>
-            </td>
-            <td>
-              <div class="descricao">
-                <label data-toggle="tooltip" title="Trecho da linha">Bairro - Centro (Via Av. Mauá)</label>
-              </div>
-            </td>
-            <td>
-              <div class="seguro clearfix">
-                <label class="float-right"><strong><label>R$ </label> 7,75</strong></label>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class="saida">
-                <label data-toggle="tooltip" id="horaSaida" title="Hora da Partida">07:00</label>
-              </div>
-            </td>
-            <td>
-              <label data-toggle="tooltip" class="tempoViagem" title="Tempo de viagem">00:30</label>
-            </td>
-            <td>
-              <div class="dias">
-                <label class="dia">Dom</label>
-                <label class="diaPossui">Seg</label>
-                <label class="diaPossui">Ter</label>
-                <label class="diaPossui">Qua</label>
-                <label class="diaPossui">Qui</label>
-                <label class="diaPossui">Sex</label>
-                <label class="diaPossui">Sab</label>
-              </div>
-
-            </td>
-            <td>
-              <div class=" modalidade">
-                  <label data-toggle="tooltip" title="Tipo de ônibus">Comum</label>
-              </div>
-            </td>
-            <td>
-              <div class="descricao">
-                <label data-toggle="tooltip" title="Trecho da linha">Bairro - Centro (Via Av. Mauá)</label>
-              </div>
-            </td>
-            <td>
-              <div class="seguro clearfix">
-                <label class="float-right"><strong><label>R$ </label> 7,75</strong></label>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class="saida">
-                <label data-toggle="tooltip" id="horaSaida" title="Hora da Partida">07:00</label>
-              </div>
-            </td>
-            <td>
-              <label data-toggle="tooltip" class="tempoViagem" title="Tempo de viagem">00:30</label>
-            </td>
-            <td>
-              <div class="dias">
-                <label class="diaPossui">Dom</label>
-                <label class="dia">Seg</label>
-                <label class="dia">Ter</label>
-                <label class="dia">Qua</label>
-                <label class="dia">Qui</label>
-                <label class="dia">Sex</label>
-                <label class="dia">Sab</label>
-              </div>
-
-            </td>
-            <td>
-              <div class=" modalidade">
-                  <label data-toggle="tooltip" title="Tipo de ônibus">Comum</label>
-              </div>
-            </td>
-            <td>
-              <div class="descricao">
-                <label data-toggle="tooltip" title="Trecho da linha">Bairro - Centro (Via Av. Mauá)</label>
-              </div>
-            </td>
-            <td>
-              <div class="seguro clearfix">
-                <label class="float-right"><strong><label>R$ </label> 7,75</strong></label>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class="saida">
-                <label data-toggle="tooltip" id="horaSaida" title="Hora da Partida">08:00</label>
-              </div>
-            </td>
-            <td>
-              <label data-toggle="tooltip" class="tempoViagem" title="Tempo de viagem">00:30</label>
-            </td>
-            <td>
-              <div class="dias">
-                <label class="dia">Dom</label>
-                <label class="diaPossui">Seg</label>
-                <label class="diaPossui">Ter</label>
-                <label class="diaPossui">Qua</label>
-                <label class="diaPossui">Qui</label>
-                <label class="diaPossui">Sex</label>
-                <label class="diaPossui">Sab</label>
-              </div>
-
-            </td>
-            <td>
-              <div class=" modalidade">
-                  <label data-toggle="tooltip" title="Tipo de ônibus">Comum</label>
-              </div>
-            </td>
-            <td>
-              <div class="descricao">
-                <label data-toggle="tooltip" title="Trecho da linha">Bairro - Centro (Via Av. Mauá)</label>
-              </div>
-            </td>
-            <td>
-              <div class="seguro clearfix">
-                <label class="float-right"><strong><label>R$ </label> 7,75</strong></label>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class="saida">
-                <label data-toggle="tooltip" id="horaSaida" title="Hora da Partida">09:00</label>
-              </div>
-            </td>
-            <td>
-              <label data-toggle="tooltip" class="tempoViagem" title="Tempo de viagem">00:30</label>
-            </td>
-            <td>
-              <div class="dias">
-                <label class="diaPossui">Dom</label>
-                <label class="dia">Seg</label>
-                <label class="dia">Ter</label>
-                <label class="dia">Qua</label>
-                <label class="dia">Qui</label>
-                <label class="dia">Sex</label>
-                <label class="dia">Sab</label>
-              </div>
-
-            </td>
-            <td>
-              <div class=" modalidade">
-                  <label data-toggle="tooltip" title="Tipo de ônibus">Comum</label>
-              </div>
-            </td>
-            <td>
-              <div class="descricao">
-                <label data-toggle="tooltip" title="Trecho da linha">Bairro - Centro (Via Av. Mauá)</label>
-              </div>
-            </td>
-            <td>
-              <div class="seguro clearfix">
-                <label class="float-right"><strong><label>R$ </label> 7,75</strong></label>
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+     
     <footer>
       <div class="linha-branca"></div> 
       <div class="container">
                  
         <div class="column1">
-          <img class="logo_footer" src="../Footer/imagens/logo_footer.png" alt="">
+          <a href="/Pagina_Inicial/index.html"><img class="logo_footer" src="/Footer/imagens/logo_footer.png" alt="logo_footer"></a>
         </div>
   
         <div class="column2">
           <ul>
-            <li class="nomes_menu1"><strong>Horáriros</strong></li>
-            <li class="nomes_menu1"><strong>Saiba Mais</strong></li>
-            <li class="nomes_menu1"><strong>Contato</strong></li>
+            <a href="/Horarios/index.html"><li class="nomes_menu1"><strong>Horários</strong></li></a>
+            <a href="/Saiba_Mais/index.html"><li class="nomes_menu1"><strong>Saiba Mais</strong></li></a>
+            <a href="/Contato/index.html"> <li class="nomes_menu1"><strong>Contato</strong></li></a>
           </ul>
         </div>
   
@@ -279,10 +81,10 @@
           <li class="nomes_menu2"><strong>Saiba Mais</strong></li>
           </ul>
           <div class="redes_footer">
-              <img class="img_redes_footer" src="../Footer/imagens/icon_facebook.png" alt="">
-              <img class="img_redes_footer" src="../Footer/imagens/icon_instagram.png" alt="">
-              <img class="img_redes_footer" src="../Footer/imagens/icon_linkedin.png" alt="">
-              <img class="img_redes_footer" src="../Footer/imagens/icon_youtube.png" alt="">
+              <img class="img_redes_footer" src="/Footer/imagens/icon_facebook.png" alt="">
+              <img class="img_redes_footer" src="/Footer/imagens/icon_instagram.png" alt="">
+              <img class="img_redes_footer" src="/Footer/imagens/icon_linkedin.png" alt="">
+              <img class="img_redes_footer" src="/Footer/imagens/icon_youtube.png" alt="">
           </div>
         </div>
   
@@ -300,11 +102,7 @@
       </div>
       <div class="linha-branca"></div>
       <p class="copyright"> <strong>© Lartic 2023 - Todos os direitos reservados.</strong>
-  </p>
-    </footer>
-
-    </body>
-  
-
-
+      </p>
+  </footer>
+    
 </html>
